@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">ShadesOfRed</string>
+    <string name="moto">Donate Blood</string>
+    <string name="moto1">at</string>
+    <string name="donation_center">Donation Center</string>
+    <string name="submit">Submit</string>
+    <string name="date">Select Date</string>
+    <string name="time">Select Time</string>
 </resources>
