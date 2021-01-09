@@ -1,13 +1,6 @@
 <resources>
     <string name="app_name">ShadesOfRed</string>
-<<<<<<< HEAD
-    <string name="moto">Donate Blood</string>
-    <string name="moto1">at</string>
-    <string name="donation_center">Donation Center</string>
-    <string name="submit">Submit</string>
-    <string name="date">Select Date</string>
-    <string name="time">Select Time</string>
-=======
+
     <string-array name="bloodgrp">
         <item>A+</item>
         <item>A-</item>
@@ -18,5 +11,5 @@
         <item>AB+</item>
         <item>AB-</item>
     </string-array>
->>>>>>> 04d5c22ffbf43219e6eb64f5be74d16a41fc5be7
+<string name="bloodagrp">A+</string>
 </resources>
