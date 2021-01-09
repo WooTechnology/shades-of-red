@@ -15,7 +15,7 @@
         android:gravity="center_horizontal"
         android:text="LOGIN"
         android:textAlignment="center"
-        android:textSize="45dp"
+        android:textSize="38dp"
         app:layout_constraintBottom_toTopOf="@+id/et_email"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.876"
@@ -75,7 +75,6 @@
         android:layout_width="362dp"
         android:layout_height="36dp"
         android:text="Do not have an account? Sign up here."
-
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

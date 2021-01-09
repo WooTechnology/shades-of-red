@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".searchDonor">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search Donor"
+        android:textColor="#D75A4A"
+        android:fontFamily="@font/baloo"
+        android:textSize="35sp"
+        android:layout_margin="20dp"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="State"
+        android:layout_marginLeft="20dp"
+        android:textColor="#000000"
+        android:textSize="15sp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:hint="Enter State"
+        android:layout_marginHorizontal="20dp"
+        android:background="@drawable/edittextbg"
+        android:padding="5dp"
+        android:textSize="15dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/state"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="City"
+        android:layout_marginLeft="20dp"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:layout_marginTop="20dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:hint="Enter City"
+        android:layout_marginHorizontal="20dp"
+        android:background="@drawable/edittextbg"
+        android:padding="5dp"
+        android:textSize="15dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/city"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="District"
+        android:layout_marginLeft="20dp"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:layout_marginTop="20dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:hint="Enter district"
+        android:layout_marginHorizontal="20dp"
+        android:background="@drawable/edittextbg"
+        android:padding="5dp"
+        android:textSize="15dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/district"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Blood Group"
+            android:layout_marginLeft="20dp"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/bloodgrp"
+            android:layout_weight="1"/>
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:id="@+id/spinner"
+            android:layout_weight="1"
+            android:layout_marginRight="20dp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="SEARCH"
+        android:background="@drawable/buttonbg"
+        android:id="@+id/searchbutton"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -16,7 +16,7 @@
         android:text="SIGN UP"
         android:textAlignment="center"
         android:textColor="#000000"
-        android:textSize="45dp"
+        android:textSize="38dp"
         app:layout_constraintBottom_toTopOf="@+id/et_NAME"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -37,7 +37,7 @@
         app:layout_constraintHorizontal_bias="0.39"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.588"
+        app:layout_constraintVertical_bias="0.618"
         app:layout_constraintWidth_percent="0.8" />
 
     <EditText
@@ -58,24 +58,6 @@
         app:layout_constraintWidth_percent="0.8" />
 
     <EditText
-        android:id="@+id/et_bloodgrp"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:background="@drawable/et_bg"
-        android:hint="Enter Blood Group"
-        android:paddingLeft="20dp"
-        android:paddingTop="10dp"
-        android:paddingBottom="10dp"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.39"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.679"
-        app:layout_constraintWidth_percent="0.8" />
-
-    <EditText
         android:id="@+id/et_password"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -90,7 +72,7 @@
         app:layout_constraintHorizontal_bias="0.39"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.77"
+        app:layout_constraintVertical_bias="0.742"
         app:layout_constraintWidth_percent="0.8" />
 
     <Button
@@ -108,6 +90,7 @@
         app:layout_constraintVertical_bias="0.344" />
 
     <TextView
+        android:id="@+id/tv_log"
         android:layout_width="362dp"
         android:layout_height="36dp"
         android:layout_marginStart="32dp"
