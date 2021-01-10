@@ -20,7 +20,8 @@
         app:layout_constraintBottom_toTopOf="@+id/et_NAME"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.904" />
+        app:layout_constraintVertical_bias="0.835" />
+
 
     <EditText
         android:id="@+id/et_NAME"
@@ -34,11 +35,11 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.39"
+        app:layout_constraintHorizontal_bias="0.378"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.448"
         app:layout_constraintWidth_percent="0.8" />
-
 
     <EditText
         android:id="@+id/et_email"
@@ -52,13 +53,11 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.39"
+        app:layout_constraintHorizontal_bias="0.378"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.618"
+        app:layout_constraintVertical_bias="0.552"
         app:layout_constraintWidth_percent="0.8" />
-
-
 
     <EditText
         android:id="@+id/et_password"
@@ -66,17 +65,36 @@
         android:layout_height="wrap_content"
         android:background="@drawable/et_bg"
         android:hint="Enter Password"
-        android:inputType = "textPassword"
+        android:inputType="textPassword"
         android:paddingLeft="20dp"
         android:paddingTop="10dp"
         android:paddingBottom="10dp"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.39"
+        app:layout_constraintHorizontal_bias="0.378"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.742"
+        app:layout_constraintVertical_bias="0.656"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <EditText
+        android:id="@+id/et_cfmpassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/et_bg"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.378"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_password"
+        app:layout_constraintVertical_bias="0.1"
         app:layout_constraintWidth_percent="0.8" />
 
     <Button
@@ -88,10 +106,10 @@
         android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.468"
+        app:layout_constraintHorizontal_bias="0.43"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/et_password"
-        app:layout_constraintVertical_bias="0.344" />
+        app:layout_constraintTop_toBottomOf="@id/et_cfmpassword"
+        app:layout_constraintVertical_bias="0.277" />
 
     <TextView
         android:id="@+id/tv_log"
