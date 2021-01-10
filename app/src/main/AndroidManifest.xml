@@ -20,6 +20,11 @@
         <activity android:name=".splash_screen">
         </activity>
 
+        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".signup"/>
+        <activity android:name=".login" />
+
+
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
