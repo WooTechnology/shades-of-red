@@ -12,15 +12,6 @@
         android:orientation="vertical"
         android:layout_centerInParent="true">
 
-<!--    <TextView-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="Search Donor"-->
-<!--        android:textColor="#D75A4A"-->
-<!--        android:fontFamily="@font/baloo"-->
-<!--        android:textSize="35sp"-->
-<!--        android:layout_margin="20dp"-->
-<!--        android:layout_gravity="center"/>-->
 
     <TextView
         android:layout_width="wrap_content"
@@ -28,7 +19,9 @@
         android:text="State"
         android:layout_marginLeft="20dp"
         android:textColor="#000000"
-        android:textSize="15sp"/>
+        android:textSize="20sp"
+        android:fontFamily="@font/baloo"/>
+
     <EditText
         android:layout_width="match_parent"
         android:layout_height="35dp"
@@ -38,15 +31,19 @@
         android:padding="5dp"
         android:textSize="15dp"
         android:layout_marginTop="5dp"
-        android:id="@+id/state"/>
+        android:id="@+id/state"
+        android:fontFamily="@font/baloo"/>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="City"
         android:layout_marginLeft="20dp"
         android:textColor="#000000"
-        android:textSize="15sp"
-        android:layout_marginTop="20dp"/>
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/baloo"/>
+
     <EditText
         android:layout_width="match_parent"
         android:layout_height="35dp"
@@ -56,15 +53,19 @@
         android:padding="5dp"
         android:textSize="15dp"
         android:layout_marginTop="5dp"
-        android:id="@+id/city"/>
+        android:id="@+id/city"
+        android:fontFamily="@font/baloo"/>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="District"
         android:layout_marginLeft="20dp"
         android:textColor="#000000"
-        android:textSize="15sp"
-        android:layout_marginTop="20dp"/>
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/baloo"/>
+
     <EditText
         android:layout_width="match_parent"
         android:layout_height="35dp"
@@ -74,7 +75,8 @@
         android:padding="5dp"
         android:textSize="15dp"
         android:layout_marginTop="5dp"
-        android:id="@+id/district"/>
+        android:id="@+id/district"
+        android:fontFamily="@font/baloo"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -87,10 +89,11 @@
             android:text="Blood Group"
             android:layout_marginLeft="20dp"
             android:textColor="#000000"
-            android:textSize="15sp"
+            android:textSize="20sp"
             android:layout_marginTop="20dp"
             android:id="@+id/bloodgrp"
-            android:layout_weight="1"/>
+            android:layout_weight="1"
+            android:fontFamily="@font/baloo"/>
 
         <Spinner
             android:layout_width="wrap_content"
@@ -98,7 +101,8 @@
             android:layout_marginTop="20dp"
             android:id="@+id/spinner"
             android:layout_weight="1"
-            android:layout_marginRight="20dp"/>
+            android:layout_marginRight="20dp"
+            android:fontFamily="@font/baloo"/>
 
     </LinearLayout>
 
@@ -108,7 +112,9 @@
         android:layout_margin="20dp"
         android:text="SEARCH"
         android:background="@drawable/buttonbg"
-        android:id="@+id/searchbutton"/>
+        android:id="@+id/searchbutton"
+        android:fontFamily="@font/baloo"
+        android:textSize="20sp"/>
 
     </LinearLayout>
 

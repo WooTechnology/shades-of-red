@@ -158,13 +158,16 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="20dp"
-            android:textSize="20sp"
-            android:text="EDIT TEXT"
+            android:textSize="15sp"
+            android:text="EDIT"
             android:background="#d75a4a"
             android:textColor="@android:color/white"
-            android:padding="10dp"/>
+            android:padding="10dp"
+            android:layout_marginBottom="10dp"/>
 
     </LinearLayout>
+
+
 
 
 </LinearLayout>

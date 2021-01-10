@@ -11,7 +11,7 @@
         android:id="@+id/heading"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-black"
+        android:fontFamily="@font/baloo"
         android:gravity="center_horizontal"
         android:text="SIGN UP"
         android:textAlignment="center"
@@ -39,7 +39,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.448"
-        app:layout_constraintWidth_percent="0.8" />
+        app:layout_constraintWidth_percent="0.8"
+        android:fontFamily="@font/baloo"/>
 
     <EditText
         android:id="@+id/et_email"
@@ -57,7 +58,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.552"
-        app:layout_constraintWidth_percent="0.8" />
+        app:layout_constraintWidth_percent="0.8"
+        android:fontFamily="@font/baloo"/>
 
     <EditText
         android:id="@+id/et_password"
@@ -76,7 +78,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.656"
-        app:layout_constraintWidth_percent="0.8" />
+        app:layout_constraintWidth_percent="0.8"
+        android:fontFamily="@font/baloo"/>
 
     <EditText
         android:id="@+id/et_cfmpassword"
@@ -95,7 +98,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/et_password"
         app:layout_constraintVertical_bias="0.1"
-        app:layout_constraintWidth_percent="0.8" />
+        app:layout_constraintWidth_percent="0.8"
+        android:fontFamily="@font/baloo"/>
 
     <Button
         android:id="@+id/reg"
@@ -109,14 +113,15 @@
         app:layout_constraintHorizontal_bias="0.43"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/et_cfmpassword"
-        app:layout_constraintVertical_bias="0.277" />
+        app:layout_constraintVertical_bias="0.277"
+        android:fontFamily="@font/baloo"/>
 
     <TextView
         android:id="@+id/tv_log"
         android:layout_width="350dp"
         android:layout_height="35dp"
         android:gravity="center_horizontal"
-        android:text="Already have an account? Click here."
+        android:text="Already an user? Sign In"
         android:textAlignment="center"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -124,7 +129,8 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/reg"
-        app:layout_constraintVertical_bias="0.454" />
+        app:layout_constraintVertical_bias="0.454"
+        android:fontFamily="@font/baloo"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
