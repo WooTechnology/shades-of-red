@@ -5,13 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@drawable/bg9">
+    android:background="@drawable/bg14">
+
 
     <TextView
         android:id="@+id/heading"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/baloo"
+        android:fontFamily="sans-serif-black"
         android:gravity="center_horizontal"
         android:text="SIGN UP"
         android:textAlignment="center"
@@ -20,8 +21,7 @@
         app:layout_constraintBottom_toTopOf="@+id/et_NAME"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.835" />
-
+        app:layout_constraintVertical_bias="0.957" />
 
     <EditText
         android:id="@+id/et_NAME"
@@ -38,9 +38,8 @@
         app:layout_constraintHorizontal_bias="0.378"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.448"
-        app:layout_constraintWidth_percent="0.8"
-        android:fontFamily="@font/baloo"/>
+        app:layout_constraintVertical_bias="0.483"
+        app:layout_constraintWidth_percent="0.8" />
 
     <EditText
         android:id="@+id/et_email"
@@ -57,9 +56,8 @@
         app:layout_constraintHorizontal_bias="0.378"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.552"
-        app:layout_constraintWidth_percent="0.8"
-        android:fontFamily="@font/baloo"/>
+        app:layout_constraintVertical_bias="0.576"
+        app:layout_constraintWidth_percent="0.8" />
 
     <EditText
         android:id="@+id/et_password"
@@ -77,9 +75,8 @@
         app:layout_constraintHorizontal_bias="0.378"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.656"
-        app:layout_constraintWidth_percent="0.8"
-        android:fontFamily="@font/baloo"/>
+        app:layout_constraintVertical_bias="0.673"
+        app:layout_constraintWidth_percent="0.8" />
 
     <EditText
         android:id="@+id/et_cfmpassword"
@@ -97,40 +94,52 @@
         app:layout_constraintHorizontal_bias="0.378"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/et_password"
-        app:layout_constraintVertical_bias="0.1"
-        app:layout_constraintWidth_percent="0.8"
-        android:fontFamily="@font/baloo"/>
+        app:layout_constraintVertical_bias="0.125"
+        app:layout_constraintWidth_percent="0.8" />
 
     <Button
         android:id="@+id/reg"
         android:layout_width="195dp"
         android:layout_height="55dp"
-        android:background="@drawable/et_bg"
+        android:background="@drawable/btn_bg"
         android:text="register"
         android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.43"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/et_cfmpassword"
-        app:layout_constraintVertical_bias="0.277"
-        android:fontFamily="@font/baloo"/>
+        app:layout_constraintVertical_bias="0.336" />
 
     <TextView
         android:id="@+id/tv_log"
         android:layout_width="350dp"
         android:layout_height="35dp"
         android:gravity="center_horizontal"
-        android:text="Already an user? Sign In"
+        android:text="Already have an account? Click here."
         android:textAlignment="center"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/reg"
-        app:layout_constraintVertical_bias="0.454"
-        android:fontFamily="@font/baloo"/>
+        app:layout_constraintVertical_bias="0.515" />
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="230dp"
+        android:layout_height="178dp"
+        android:layout_marginTop="36dp"
+        android:background="@android:color/white"
+        android:gravity="center_horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/heading"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/logo" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
