@@ -72,7 +72,7 @@ public class splash_screen extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                startActivity(new Intent(splash_screen.this , MainActivity.class).setFlags(Intent.FLAG_ACTIVITY_NEW_TASK));
+                startActivity(new Intent(splash_screen.this , login.class).setFlags(Intent.FLAG_ACTIVITY_NEW_TASK));
                 finish();
             }
         },3000);

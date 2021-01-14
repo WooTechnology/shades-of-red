@@ -79,7 +79,6 @@
                             android:fontFamily="sans-serif-medium"
                             android:text="O+"
                             android:textAlignment="center"
-                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                             android:textColor="@android:color/holo_red_dark"
                             android:textSize="28sp"
                             android:textStyle="bold" />
@@ -171,7 +170,6 @@
                             android:fontFamily="sans-serif-medium"
                             android:text="@string/bloodagrp"
                             android:textAlignment="center"
-                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                             android:textSize="28sp"
                             android:textStyle="bold" />
 

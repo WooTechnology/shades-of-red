@@ -15,6 +15,7 @@ public class login extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getSupportActionBar().hide();
         setContentView(R.layout.activity_login);
 
         tv_reg = (TextView)findViewById(R.id.tv_signup);
@@ -25,12 +26,14 @@ public class login extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(login.this, signup.class);
                 startActivity(intent);
+                finish();
             }
         });
         btn_log.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(login.this, searchDonor.class);
+                finish();
             }
         });
 

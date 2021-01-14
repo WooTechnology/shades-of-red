@@ -15,6 +15,7 @@ public class signup extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getSupportActionBar().hide();
         setContentView(R.layout.activity_signup);
 
         tv_login = (TextView)findViewById(R.id.tv_log);
@@ -25,6 +26,7 @@ public class signup extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(signup.this, login.class);
                 startActivity(intent);
+                finish();
             }
         });
 
@@ -33,6 +35,7 @@ public class signup extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(signup.this, searchDonor.class);
                 startActivity(intent);
+                finish();
             }
         });
 

@@ -21,7 +21,7 @@
         app:layout_constraintVertical_bias="0.876"
         tools:layout_editor_absoluteX="0dp"
         android:textColor="#000000"
-        android:fontFamily="sans-serif-black"/>
+        android:fontFamily="@font/baloo"/>
 
     <EditText
         android:id="@+id/et_email"
@@ -37,8 +37,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.539"
-        app:layout_constraintWidth_percent="0.8" />
+        app:layout_constraintVertical_bias="0.5"
+        app:layout_constraintWidth_percent="0.8"
+        android:fontFamily="@font/baloo"/>
 
     <EditText
         android:id="@+id/et_password"
@@ -56,7 +57,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.652"
-        app:layout_constraintWidth_percent="0.8" />
+        app:layout_constraintWidth_percent="0.8"
+        android:fontFamily="@font/baloo"/>
 
     <Button
         android:id="@+id/button"
@@ -69,14 +71,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/et_password"
-        app:layout_constraintVertical_bias="0.224" />
+        app:layout_constraintVertical_bias="0.224"
+        android:fontFamily="@font/baloo"/>
 
     <TextView
         android:id="@+id/tv_signup"
         android:layout_width="350dp"
         android:layout_height="35dp"
         android:textAlignment="center"
-        android:text="Do not have an account? Sign up here."
+        android:text="New Here ? Sign up"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -84,5 +87,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button"
         app:layout_constraintVertical_bias="0.454"
-        android:gravity="center_horizontal" />
+        android:gravity="center_horizontal"
+        android:fontFamily="@font/baloo"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
