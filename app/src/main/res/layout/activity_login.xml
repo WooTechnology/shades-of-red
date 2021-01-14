@@ -45,10 +45,11 @@
 
     <Button
         android:id="@+id/button"
-        android:layout_width="195dp"
+        android:layout_width="328dp"
         android:layout_height="55dp"
         android:background="@drawable/btn_bg"
         android:text="LOGIN"
+        android:fontFamily="@font/baloo"
         android:textColor="#000000"
         android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -62,6 +63,7 @@
         android:layout_width="350dp"
         android:layout_height="35dp"
         android:gravity="center_horizontal"
+        android:fontFamily="@font/baloo"
         android:text="Do not have an account? Sign up here."
         android:textAlignment="center"
         android:textSize="20dp"
@@ -74,8 +76,8 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="230dp"
-        android:layout_height="178dp"
+        android:layout_width="200dp"
+        android:layout_height="160dp"
         android:layout_marginTop="36dp"
         android:background="@android:color/white"
         android:gravity="center_horizontal"
