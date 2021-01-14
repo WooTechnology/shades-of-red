@@ -111,7 +111,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
         android:text="SEARCH"
-        android:background="@drawable/buttonbg"
+        android:background="@drawable/btn_bg"
         android:id="@+id/searchbutton"
         android:fontFamily="@font/baloo"
         android:textSize="20sp"/>

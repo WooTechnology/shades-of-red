@@ -11,6 +11,7 @@
 
     <TextView
         android:id="@+id/txt_name"
+        android:fontFamily="@font/baloo"
         android:layout_width="362dp"
         android:layout_height="91dp"
         android:layout_gravity="center_horizontal"
@@ -32,6 +33,7 @@
     <TextView
         android:id="@+id/txt_bg"
         android:layout_width="216dp"
+        android:fontFamily="@font/baloo"
         android:layout_height="47dp"
         android:layout_marginTop="28dp"
         android:layout_marginEnd="8dp"
@@ -54,6 +56,7 @@
         android:layout_marginStart="264dp"
         android:layout_marginLeft="264dp"
         android:layout_marginTop="32dp"
+        android:fontFamily="@font/baloo"
         android:paddingLeft="8sp"
         android:text="A+"
         android:textColor="#000000"
@@ -85,6 +88,7 @@
             android:layout_gravity="center_vertical"
             android:paddingLeft="25sp"
             android:text="Number of times Donated"
+            android:fontFamily="@font/baloo"
             android:textColor="#000000"
             android:textSize="20sp"
             android:textStyle="bold" />
@@ -110,6 +114,7 @@
             android:id="@+id/txt_email"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/baloo"
             android:layout_gravity="center_vertical"
             android:layout_marginLeft="20dp"
             android:paddingLeft="5dp"
@@ -139,6 +144,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
+            android:fontFamily="@font/baloo"
             android:layout_marginLeft="20dp"
             android:paddingLeft="5dp"
             android:text="+266 225 225"
@@ -170,6 +176,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:layout_marginLeft="20dp"
+            android:fontFamily="@font/baloo"
             android:paddingLeft="5sp"
             android:text="State"
             android:textColor="#000000"
@@ -197,6 +204,7 @@
         <TextView
             android:id="@+id/txt_city"
             android:layout_width="wrap_content"
+            android:fontFamily="@font/baloo"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:layout_marginLeft="20dp"
@@ -216,6 +224,7 @@
         android:background="@drawable/btn_bg"
         android:padding="10dp"
         android:paddingTop="20sp"
+        android:fontFamily="@font/baloo"
         android:paddingBottom="20dp"
         android:text="EDIT"
         android:textColor="#000000"

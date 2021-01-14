@@ -12,8 +12,8 @@
         android:id="@+id/heading"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-black"
         android:gravity="center_horizontal"
+        android:fontFamily="@font/baloo"
         android:text="SIGN UP"
         android:textAlignment="center"
         android:textColor="#000000"
@@ -99,16 +99,18 @@
 
     <Button
         android:id="@+id/reg"
-        android:layout_width="195dp"
-        android:layout_height="55dp"
+        android:layout_width="332dp"
+        android:layout_height="59dp"
         android:background="@drawable/btn_bg"
         android:text="register"
         android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.36"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/et_cfmpassword"
-        app:layout_constraintVertical_bias="0.336" />
+        app:layout_constraintVertical_bias="0.273"
+        android:fontFamily="@font/baloo"/>
 
     <TextView
         android:id="@+id/tv_log"
@@ -123,13 +125,14 @@
         app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/reg"
-        app:layout_constraintVertical_bias="0.515" />
+        app:layout_constraintVertical_bias="0.515"
+        android:fontFamily="@font/baloo"/>
 
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="230dp"
-        android:layout_height="178dp"
+        android:layout_width="200dp"
+        android:layout_height="160dp"
         android:layout_marginTop="36dp"
         android:background="@android:color/white"
         android:gravity="center_horizontal"
