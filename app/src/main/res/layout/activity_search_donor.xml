@@ -19,7 +19,8 @@
         android:text="State"
         android:layout_marginLeft="20dp"
         android:textColor="#000000"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:fontFamily="@font/baloo"/>
 
     <EditText
         android:layout_width="match_parent"
@@ -30,7 +31,8 @@
         android:padding="5dp"
         android:textSize="15dp"
         android:layout_marginTop="5dp"
-        android:id="@+id/state" />
+        android:id="@+id/state"
+        android:fontFamily="@font/baloo"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -39,7 +41,8 @@
         android:layout_marginLeft="20dp"
         android:textColor="#000000"
         android:textSize="20sp"
-        android:layout_marginTop="20dp" />
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/baloo"/>
 
     <EditText
         android:layout_width="match_parent"
@@ -50,7 +53,8 @@
         android:padding="5dp"
         android:textSize="15dp"
         android:layout_marginTop="5dp"
-        android:id="@+id/city" />
+        android:id="@+id/city"
+        android:fontFamily="@font/baloo"/>
 
 
     <LinearLayout
@@ -67,7 +71,8 @@
             android:textSize="20sp"
             android:layout_marginTop="20dp"
             android:id="@+id/bloodgrp"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:fontFamily="@font/baloo"/>
 
         <Spinner
             android:layout_width="wrap_content"
@@ -86,7 +91,9 @@
         android:text="SEARCH"
         android:background="@drawable/btn_bg"
         android:id="@+id/searchbutton"
-        android:textSize="20sp"/>
+        android:textSize="20sp"
+        android:onClick="search"
+        android:fontFamily="@font/baloo"/>
 
     </LinearLayout>
 

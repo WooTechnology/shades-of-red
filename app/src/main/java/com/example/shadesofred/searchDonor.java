@@ -65,4 +65,7 @@ public class searchDonor extends AppCompatActivity implements AdapterView.OnItem
         }
         return super.onOptionsItemSelected(item);
     }
+
+    public void search(View view) {
+    }
 }
