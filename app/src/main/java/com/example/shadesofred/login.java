@@ -33,6 +33,7 @@ public class login extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(login.this, searchDonor.class);
+                startActivity(intent);
                 finish();
             }
         });

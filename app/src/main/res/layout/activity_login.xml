@@ -11,6 +11,7 @@
     <EditText
         android:id="@+id/et_email"
         android:layout_width="0dp"
+        android:fontFamily="@font/baloo"
         android:layout_height="wrap_content"
         android:background="@drawable/et_bg"
         android:hint="Enter Email"
@@ -36,6 +37,7 @@
         android:paddingTop="10dp"
         android:paddingBottom="10dp"
         android:textSize="20sp"
+        android:fontFamily="@font/baloo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

@@ -13,10 +13,12 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.Spinner;
 
 public class searchDonor extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
     Spinner sp;
+    public Button search;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +27,17 @@ public class searchDonor extends AppCompatActivity implements AdapterView.OnItem
         //getSupportActionBar().hide();
         setTitle("Search Donor");
         setContentView(R.layout.activity_search_donor);
+
+        search = (Button) findViewById(R.id.searchbutton);
+        search.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(searchDonor.this, donarCard.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
         sp = findViewById(R.id.spinner);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
                 R.array.bloodgrp, android.R.layout.simple_spinner_item);

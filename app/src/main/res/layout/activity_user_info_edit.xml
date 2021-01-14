@@ -4,71 +4,65 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/bg14">
+    android:layout_height="match_parent">
 
 
-    <EditText
-        android:id="@+id/et_name"
-        android:layout_width="362dp"
-        android:layout_height="91dp"
-        android:layout_gravity="center_horizontal"
-        android:fontFamily="@font/baloo"
-        android:background="@drawable/btn_bg"
-        android:text="PARVATHY M"
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="420dp"
+        android:layout_height="238dp"
+        android:background="#d75a4a"
+        android:orientation="vertical"
         android:textAlignment="center"
-        android:textColor="#000000"
-        android:textSize="40sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.489"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.062" />
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="NotSibling">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="195dp"
-        android:layout_height="41dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
-        android:fontFamily="@font/baloo"
-        android:text="BLOOD GROUP : "
-        android:textColor="#000000"
-        android:textSize="25sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/txt_blood_group"
-        app:layout_constraintTop_toBottomOf="@+id/et_name" />
+        <ImageView
+            android:id="@+id/img_man"
+            android:layout_width="150dp"
+            android:layout_height="130dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/male" />
 
+        <EditText
+            android:id="@+id/txt_name"
+            android:layout_width="203dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="0dp"
+            android:text="Wiliam Snoe"
+            android:textColor="#fff"
+            android:textSize="21sp"
+            android:textStyle="bold" />
 
-    <EditText
-        android:id="@+id/txt_blood_group"
-        android:layout_width="99dp"
-        android:layout_height="67dp"
-        android:layout_gravity="center_vertical"
-        android:layout_marginStart="256dp"
-        android:layout_marginTop="16dp"
-        android:fontFamily="@font/baloo"
-        android:paddingLeft="8sp"
-        android:text="A+"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_name" />
+        <EditText
+            android:id="@+id/txt_bg"
+            android:layout_width="203dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="1dp"
+            android:text="A+"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="21sp"
+            android:textStyle="bold" />
+    </LinearLayout>
 
     <LinearLayout
 
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="364dp"
+        android:layout_marginTop="280dp"
         android:orientation="horizontal"
         android:paddingLeft="25dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="1"
+        app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteX="0dp">
 
         <ImageView
@@ -77,15 +71,14 @@
             android:src="@drawable/number" />
 
         <EditText
-            android:id="@+id/et_number_donated"
+            android:id="@+id/txt_number_donated"
             android:layout_width="wrap_content"
-            android:fontFamily="@font/baloo"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
+            android:fontFamily="@font/baloo"
             android:paddingLeft="25sp"
             android:text="Number of times Donated"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+            android:textSize="20sp" />
 
     </LinearLayout>
 
@@ -93,11 +86,10 @@
         android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:orientation="horizontal"
         android:paddingLeft="25dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-        app:layout_constraintVertical_bias="0.028"
         tools:layout_editor_absoluteX="0dp">
 
         <ImageView
@@ -106,28 +98,26 @@
             android:src="@drawable/email" />
 
         <EditText
-            android:id="@+id/et_email"
+            android:id="@+id/txt_email"
             android:layout_width="wrap_content"
-            android:fontFamily="@font/baloo"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:layout_marginLeft="20dp"
+            android:fontFamily="@font/baloo"
             android:paddingLeft="5dp"
             android:text="Wiliam@gmail.com"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+            android:textSize="20sp" />
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/linearLayout3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
         android:orientation="horizontal"
         android:paddingLeft="25dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
-        app:layout_constraintVertical_bias="0.037"
-        tools:layout_editor_absoluteX="0dp">
+        tools:layout_editor_absoluteX="-16dp">
 
         <ImageView
             android:layout_width="36dp"
@@ -136,27 +126,26 @@
 
         <EditText
             android:id="@+id/txt_contact"
-            android:fontFamily="@font/baloo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:layout_marginLeft="20dp"
+            android:fontFamily="@font/baloo"
             android:paddingLeft="5dp"
             android:text="+266 225 225"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+            android:textSize="20sp" />
     </LinearLayout>
-
 
     <LinearLayout
         android:id="@+id/linearLayout7"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="140dp"
         android:orientation="horizontal"
         android:paddingLeft="25dp"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout6"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
-        app:layout_constraintVertical_bias="0.135"
         tools:layout_editor_absoluteX="0dp">
 
         <ImageView
@@ -165,17 +154,17 @@
             android:src="@drawable/location" />
 
         <EditText
-            android:id="@+id/et_loc"
+            android:id="@+id/txt_loc"
             android:layout_width="wrap_content"
-            android:fontFamily="@font/baloo"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:layout_marginLeft="20dp"
+            android:fontFamily="@font/baloo"
             android:paddingLeft="5sp"
             android:text="State"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+            android:textSize="20sp" />
     </LinearLayout>
+
 
     <LinearLayout
         android:id="@+id/linearLayout8"
@@ -184,8 +173,9 @@
         android:layout_marginTop="8dp"
         android:orientation="horizontal"
         android:paddingLeft="25dp"
-
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout6"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout7"
+        app:layout_constraintVertical_bias="0.108"
         tools:layout_editor_absoluteX="0dp">
 
         <ImageView
@@ -194,60 +184,54 @@
             android:src="@drawable/location" />
 
         <EditText
-            android:id="@+id/et_city"
-            android:fontFamily="@font/baloo"
+            android:id="@+id/txt_city"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:layout_marginLeft="20dp"
+            android:fontFamily="@font/baloo"
             android:paddingLeft="5sp"
             android:text="City"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+            android:textSize="20sp" />
     </LinearLayout>
 
     <Button
-        android:id="@+id/btn_cancel"
-        android:fontFamily="@font/baloo"
-        android:layout_width="158dp"
-        android:layout_height="53dp"
+        android:id="@+id/btn_save"
+        android:layout_width="112dp"
+        android:layout_height="56dp"
         android:layout_gravity="center_horizontal"
-        android:layout_marginBottom="40dp"
         android:background="@drawable/btn_bg"
+        android:fontFamily="@font/baloo"
         android:padding="10dp"
-        android:paddingTop="20sp"
-        android:paddingBottom="20dp"
+        android:paddingBottom="40dp"
+        android:text="SAVE"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.946"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout8"
+        app:layout_constraintVertical_bias="0.431" />
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="109dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/btn_bg"
+        android:fontFamily="@font/baloo"
+        android:padding="10dp"
+        android:paddingBottom="50dp"
         android:text="CANCEL"
         android:textColor="#000000"
         android:textSize="25sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/btn_save_edit"
-        app:layout_constraintHorizontal_bias="0.342"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout8" />
-
-    <Button
-        android:id="@+id/btn_save_edit"
-        android:layout_width="158dp"
-        android:layout_height="53dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginBottom="40dp"
-        android:background="@drawable/btn_bg"
-        android:padding="10dp"
-        android:paddingTop="20sp"
-        android:paddingBottom="20dp"
-        android:text="SAVE"
-        android:fontFamily="@font/baloo"
-        android:textColor="#000000"
-        android:textSize="25sp"
-        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintHorizontal_bias="0.052"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout8"
-        app:layout_constraintVertical_bias="0.5" />
+        app:layout_constraintVertical_bias="0.427" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

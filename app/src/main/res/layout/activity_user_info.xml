@@ -4,73 +4,62 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/bg14">
+    android:layout_height="match_parent">
 
 
-
-    <TextView
-        android:id="@+id/txt_name"
-        android:fontFamily="@font/baloo"
-        android:layout_width="362dp"
-        android:layout_height="91dp"
-        android:layout_gravity="center_horizontal"
-        android:background="@drawable/btn_bg"
-        android:paddingTop="20dp"
-        android:text="PARVATHY M"
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="409dp"
+        android:layout_height="250dp"
+        android:background="#d75a4a"
+        android:orientation="vertical"
         android:textAlignment="center"
-        android:textColor="#000000"
-        android:textSize="40sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.489"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.062" />
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="NotSibling">
 
+        <ImageView
+            android:id="@+id/img_man"
+            android:layout_width="150dp"
+            android:layout_height="130dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/male" />
 
-    <TextView
-        android:id="@+id/txt_bg"
-        android:layout_width="216dp"
-        android:fontFamily="@font/baloo"
-        android:layout_height="47dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:gravity="center_horizontal"
-        android:paddingTop="10dp"
-        android:text="BLOOD GROUP : "
-        android:textAlignment="center"
-        android:textColor="#000000"
-        android:textSize="25sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/txt_blood_group"
-        app:layout_constraintTop_toBottomOf="@+id/txt_name" />
+        <TextView
+            android:id="@+id/txt_name"
+            android:layout_width="203dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:text="Wiliam Snoe"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="21sp"
+            android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/txt_blood_group"
-        android:layout_width="106dp"
-        android:layout_height="47dp"
-        android:layout_gravity="center_vertical"
-        android:layout_marginStart="264dp"
-        android:layout_marginLeft="264dp"
-        android:layout_marginTop="32dp"
-        android:fontFamily="@font/baloo"
-        android:paddingLeft="8sp"
-        android:text="A+"
-        android:textColor="#000000"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_name" />
+        <TextView
+            android:id="@+id/txt_bg"
+            android:layout_width="203dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="1dp"
+            android:text="A+"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="21sp"
+            android:textStyle="bold" />
+    </LinearLayout>
 
     <LinearLayout
 
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="300dp"
+        android:layout_marginTop="332dp"
         android:orientation="horizontal"
         android:paddingLeft="25dp"
         app:layout_constraintTop_toTopOf="parent"
@@ -86,12 +75,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
+            android:fontFamily="@font/baloo"
             android:paddingLeft="25sp"
             android:text="Number of times Donated"
-            android:fontFamily="@font/baloo"
             android:textColor="#000000"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+            android:textSize="20sp" />
 
     </LinearLayout>
 
@@ -99,7 +87,7 @@
         android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="4dp"
         android:orientation="horizontal"
         android:paddingLeft="25dp"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
@@ -114,21 +102,20 @@
             android:id="@+id/txt_email"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/baloo"
             android:layout_gravity="center_vertical"
             android:layout_marginLeft="20dp"
+            android:fontFamily="@font/baloo"
             android:paddingLeft="5dp"
             android:text="Wiliam@gmail.com"
             android:textColor="#000000"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+            android:textSize="20sp" />
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/linearLayout3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="8dp"
         android:orientation="horizontal"
         android:paddingLeft="25dp"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
@@ -144,20 +131,19 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            android:fontFamily="@font/baloo"
             android:layout_marginLeft="20dp"
+            android:fontFamily="@font/baloo"
             android:paddingLeft="5dp"
             android:text="+266 225 225"
             android:textColor="#000000"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+            android:textSize="20sp" />
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/linearLayout7"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="4dp"
         android:layout_marginBottom="140dp"
         android:orientation="horizontal"
         android:paddingLeft="25dp"
@@ -180,15 +166,14 @@
             android:paddingLeft="5sp"
             android:text="State"
             android:textColor="#000000"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+            android:textSize="20sp" />
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/linearLayout8"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:orientation="horizontal"
         android:paddingLeft="25dp"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout6"
@@ -204,38 +189,34 @@
         <TextView
             android:id="@+id/txt_city"
             android:layout_width="wrap_content"
-            android:fontFamily="@font/baloo"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:layout_marginLeft="20dp"
+            android:fontFamily="@font/baloo"
             android:paddingLeft="5sp"
             android:text="City"
             android:textColor="#000000"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+            android:textSize="20sp" />
     </LinearLayout>
 
     <Button
         android:id="@+id/btn_edit"
-        android:layout_width="158dp"
-        android:layout_height="53dp"
+        android:layout_width="161dp"
+        android:layout_height="55dp"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="48dp"
         android:background="@drawable/btn_bg"
+        android:fontFamily="@font/baloo"
         android:padding="10dp"
         android:paddingTop="20sp"
-        android:fontFamily="@font/baloo"
         android:paddingBottom="20dp"
         android:text="EDIT"
         android:textColor="#000000"
-        android:textSize="25sp"
-        android:textStyle="bold"
+        android:textSize="27sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.901"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout8"
-        app:layout_constraintVertical_bias="0.177" />
+        app:layout_constraintVertical_bias="0.532" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
