@@ -23,11 +23,12 @@
 
         <ImageView
             android:id="@+id/img_man"
-            android:layout_width="150dp"
-            android:layout_height="130dp"
+            android:layout_width="193dp"
+            android:layout_height="129dp"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="10dp"
-            android:src="@drawable/male" />
+            android:src="@drawable/logo"
+            android:background="@android:color/white"/>
 
         <TextView
             android:id="@+id/txt_name"

@@ -27,7 +27,8 @@
             android:layout_height="130dp"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="10dp"
-            android:src="@drawable/male" />
+            android:src="@drawable/logo"
+            android:background="@android:color/white"/>
 
         <EditText
             android:id="@+id/txt_name"
