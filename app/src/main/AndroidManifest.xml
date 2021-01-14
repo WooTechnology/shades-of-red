@@ -11,8 +11,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".searchDonor">
-        </activity>
+        <activity android:name=".userInfoEdit"></activity>
+        <activity android:name=".user_info" />
+        <activity android:name=".searchDonor" />
         <activity android:name=".splash_screen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,8 +23,7 @@
         </activity>
         <activity android:name=".MainActivity" />
         <activity android:name=".signup" />
-        <activity android:name=".login" >
-        </activity>
+        <activity android:name=".login" />
 
         <meta-data
             android:name="preloaded_fonts"
