@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "486051366518",
+    "project_id": "shades-of-red-b8a98",
+    "storage_bucket": "shades-of-red-b8a98.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:486051366518:android:795cf88be224547952c157",
+        "android_client_info": {
+          "package_name": "com.example.shadesofred"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "486051366518-1i643rnr3tec0ca17qjhu4hg7a0gvfpt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxaLwHq_wqrYtN0FHIFAYOElvqysTHsXY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "486051366518-1i643rnr3tec0ca17qjhu4hg7a0gvfpt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

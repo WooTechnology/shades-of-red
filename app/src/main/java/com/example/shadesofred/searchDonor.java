@@ -59,6 +59,8 @@ public class searchDonor extends AppCompatActivity implements AdapterView.OnItem
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()){
             case R.id.profile:
+                Intent i = new Intent(searchDonor.this,user_info.class);
+                startActivity(i);
 
         }
         return super.onOptionsItemSelected(item);

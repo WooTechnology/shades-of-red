@@ -19,8 +19,7 @@
         android:text="State"
         android:layout_marginLeft="20dp"
         android:textColor="#000000"
-        android:textSize="20sp"
-        android:fontFamily="@font/baloo"/>
+        android:textSize="20sp" />
 
     <EditText
         android:layout_width="match_parent"
@@ -31,8 +30,7 @@
         android:padding="5dp"
         android:textSize="15dp"
         android:layout_marginTop="5dp"
-        android:id="@+id/state"
-        android:fontFamily="@font/baloo"/>
+        android:id="@+id/state" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -41,8 +39,7 @@
         android:layout_marginLeft="20dp"
         android:textColor="#000000"
         android:textSize="20sp"
-        android:layout_marginTop="20dp"
-        android:fontFamily="@font/baloo"/>
+        android:layout_marginTop="20dp" />
 
     <EditText
         android:layout_width="match_parent"
@@ -53,30 +50,8 @@
         android:padding="5dp"
         android:textSize="15dp"
         android:layout_marginTop="5dp"
-        android:id="@+id/city"
-        android:fontFamily="@font/baloo"/>
+        android:id="@+id/city" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="District"
-        android:layout_marginLeft="20dp"
-        android:textColor="#000000"
-        android:textSize="20sp"
-        android:layout_marginTop="20dp"
-        android:fontFamily="@font/baloo"/>
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="35dp"
-        android:hint="Enter district"
-        android:layout_marginHorizontal="20dp"
-        android:background="@drawable/edittextbg"
-        android:padding="5dp"
-        android:textSize="15dp"
-        android:layout_marginTop="5dp"
-        android:id="@+id/district"
-        android:fontFamily="@font/baloo"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -92,8 +67,7 @@
             android:textSize="20sp"
             android:layout_marginTop="20dp"
             android:id="@+id/bloodgrp"
-            android:layout_weight="1"
-            android:fontFamily="@font/baloo"/>
+            android:layout_weight="1" />
 
         <Spinner
             android:layout_width="wrap_content"
@@ -101,8 +75,7 @@
             android:layout_marginTop="20dp"
             android:id="@+id/spinner"
             android:layout_weight="1"
-            android:layout_marginRight="20dp"
-            android:fontFamily="@font/baloo"/>
+            android:layout_marginRight="20dp" />
 
     </LinearLayout>
 
@@ -113,7 +86,6 @@
         android:text="SEARCH"
         android:background="@drawable/buttonbg"
         android:id="@+id/searchbutton"
-        android:fontFamily="@font/baloo"
         android:textSize="20sp"/>
 
     </LinearLayout>
