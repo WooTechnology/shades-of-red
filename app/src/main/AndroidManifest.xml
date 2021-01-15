@@ -14,7 +14,8 @@
         <activity android:name=".donarCard"></activity>
         <activity android:name=".userInfoEdit" />
         <activity android:name=".user_info" />
-        <activity android:name=".searchDonor" />
+        <activity android:name=".searchDonor" >
+        </activity>
         <activity android:name=".splash_screen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

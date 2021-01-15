@@ -13,12 +13,23 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.Spinner;
 
 public class searchDonor extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
+    private static final String[] STATES = new String[]{
+        "Andhra Pradesh" , "Arunachal Pradesh" , "Assam" , "Bihar" , "Chhattisgarh" , "Delhi", "Goa" , "Gujrat" ,
+            "Haryana" , "Maharashtra" , "Tamil Nadu"
+    };
+
+    private static final String[] Cities = new String[]{
+            "Mumbai" , "Pune" , "Thane" ,"Nagpur" , "Delhi" , "New Delhi" , "Chennai"
+    };
+
     Spinner sp;
     public Button search;
+    AutoCompleteTextView state , city;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +40,8 @@ public class searchDonor extends AppCompatActivity implements AdapterView.OnItem
         setContentView(R.layout.activity_search_donor);
 
         search = (Button) findViewById(R.id.searchbutton);
+        state = findViewById(R.id.state);
+        city = findViewById(R.id.city);
         search.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -47,6 +60,14 @@ public class searchDonor extends AppCompatActivity implements AdapterView.OnItem
         sp.setAdapter(adapter);
 
         sp.setOnItemSelectedListener(this);
+
+        //state suggestions
+        ArrayAdapter <String> adapter1 = new ArrayAdapter<String>(this,R.layout.support_simple_spinner_dropdown_item , STATES);
+        state.setAdapter(adapter1);
+
+        //cities suggestions
+        ArrayAdapter <String> adapter2 = new ArrayAdapter<String>(this,R.layout.support_simple_spinner_dropdown_item , Cities);
+        city.setAdapter(adapter2);
 
 
     }
