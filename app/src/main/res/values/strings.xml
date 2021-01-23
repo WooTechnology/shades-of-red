@@ -2,6 +2,7 @@
     <string name="app_name">ShadesOfRed</string>
 
     <string-array name="bloodgrp">
+        <item>Enter blood group</item>
         <item>A+</item>
         <item>A-</item>
         <item>B+</item>
@@ -10,6 +11,15 @@
         <item>O-</item>
         <item>AB+</item>
         <item>AB-</item>
+    </string-array>
+
+    <string-array name="states">
+        <item>Enter your state</item>
+        <item>Delhi</item>
+        <item>Gujrat</item>
+        <item>Haryana</item>
+        <item>Madhya Pradesh</item>
+        <item>Rajasthan</item>
     </string-array>
     <string name="bloodagrp">A+</string>
 </resources>

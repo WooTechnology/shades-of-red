@@ -61,39 +61,10 @@
                 android:paddingBottom="10dp"
                 android:textSize="20sp"
                 android:layout_marginTop="20dp"
-                android:fontFamily="@font/baloo"/>
-
-            <EditText
-                android:id="@+id/et_pwd"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="20dp"
-                android:background="@drawable/et_bg"
-                android:hint="Enter Password"
-                android:paddingLeft="20dp"
-                android:paddingTop="10dp"
-                android:inputType="textPassword"
-                android:paddingBottom="10dp"
-                android:textSize="20sp"
-                android:layout_marginTop="20dp"
-                android:fontFamily="@font/baloo"/>
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="20dp"
-                android:background="@drawable/et_bg"
-                android:hint="Confirm Password"
-                android:inputType="textPassword"
-                android:paddingLeft="20dp"
                 android:fontFamily="@font/baloo"
-                android:paddingTop="10dp"
-                android:paddingBottom="10dp"
-                android:textSize="20sp"
-                android:layout_marginTop="20dp"/>
+                android:inputType="textEmailAddress"/>
 
-            <EditText
-                android:id="@+id/et_cfmpwd"
+            <Spinner
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="20dp"
@@ -104,7 +75,10 @@
                 android:paddingBottom="10dp"
                 android:textSize="20sp"
                 android:fontFamily="@font/baloo"
-                android:layout_marginTop="20dp"/>
+                android:layout_marginTop="20dp"
+                android:entries="@array/bloodgrp"
+                android:spinnerMode="dropdown"
+                android:id="@+id/sp_blood"/>
 
             <EditText
                 android:id="@+id/et_num"
@@ -120,33 +94,107 @@
                 android:fontFamily="@font/baloo"
                 android:layout_marginTop="20dp"/>
 
-            <EditText
-                android:id="@+id/et_state"
+            <Spinner
+                android:id="@+id/sp_state"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="20dp"
                 android:background="@drawable/et_bg"
-                android:hint="Enter State"
                 android:paddingLeft="20dp"
                 android:paddingTop="10dp"
                 android:paddingBottom="10dp"
                 android:textSize="20sp"
                 android:fontFamily="@font/baloo"
-                android:layout_marginTop="20dp"/>
+                android:layout_marginTop="20dp"
+                android:entries="@array/states"
+                android:spinnerMode="dropdown"/>
+
+            <Spinner
+                android:id="@+id/sp_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:background="@drawable/et_bg"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textSize="20sp"
+                android:fontFamily="@font/baloo"
+                android:layout_marginTop="20dp"
+                android:spinnerMode="dropdown"/>
 
             <EditText
-                android:id="@+id/et_city"
+                android:id="@+id/et_pwd"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="20dp"
                 android:background="@drawable/et_bg"
-                android:hint="Enter City"
+                android:hint="Enter Password"
                 android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:inputType="textPassword"
+                android:paddingBottom="10dp"
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/baloo" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:background="@drawable/et_bg"
+                android:hint="Confirm Password"
+                android:inputType="textPassword"
+                android:paddingLeft="20dp"
+                android:fontFamily="@font/baloo"
                 android:paddingTop="10dp"
                 android:paddingBottom="10dp"
                 android:textSize="20sp"
-                android:fontFamily="@font/baloo"
-                android:layout_marginTop="20dp" />
+                android:layout_marginTop="20dp"
+                android:id="@+id/et_cfmpwd"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="You are?"
+                    android:textColor="#000000"
+                    android:textSize="20sp"/>
+
+                <RadioGroup
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Patient"
+                        android:textSize="20sp"
+                        android:id="@+id/rb_p"
+                        />
+
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Donor"
+                        android:textSize="20sp"
+                        android:id="@+id/rb_d"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
 
             <Button
                 android:id="@+id/reg"
@@ -171,6 +219,15 @@
                 android:fontFamily="@font/baloo"
                 android:layout_marginTop="10dp"
                 android:layout_gravity="center"/>
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="invisible"
+                android:id="@+id/pb"
+                android:layout_marginVertical="10dp"
+                />
 
 
         </LinearLayout>
