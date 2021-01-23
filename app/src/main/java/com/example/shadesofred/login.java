@@ -38,6 +38,11 @@ public class login extends AppCompatActivity {
         progressBar = findViewById(R.id.progressBar);
         firebaseAuth = FirebaseAuth.getInstance();
 
+        if (firebaseAuth.getCurrentUser() != null) {
+            startActivity(new Intent(getApplicationContext(), searchDonor.class));
+            finish();
+        }
+
         tv_reg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

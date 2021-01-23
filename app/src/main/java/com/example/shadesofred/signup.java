@@ -57,10 +57,6 @@ public class signup extends AppCompatActivity implements AdapterView.OnItemSelec
         rb_patient = findViewById(R.id.rb_p);
         rb_donor = findViewById(R.id.rb_d);
 
-        if (firebaseAuth.getCurrentUser() != null) {
-            startActivity(new Intent(getApplicationContext(), searchDonor.class));
-            finish();
-        }
 
 
         databaseReference = FirebaseDatabase.getInstance().getReference("Users");

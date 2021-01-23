@@ -16,32 +16,28 @@ import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.Spinner;
+import android.widget.Toast;
+
+import com.google.firebase.auth.FirebaseAuth;
 
 public class searchDonor extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
-    private static final String[] STATES = new String[]{
-        "Andhra Pradesh" , "Arunachal Pradesh" , "Assam" , "Bihar" , "Chhattisgarh" , "Delhi", "Goa" , "Gujrat" ,
-            "Haryana" , "Maharashtra" , "Tamil Nadu"
-    };
 
-    private static final String[] Cities = new String[]{
-            "Mumbai" , "Pune" , "Thane" ,"Nagpur" , "Delhi" , "New Delhi" , "Chennai"
-    };
-
-    Spinner sp;
+    Spinner sp_state , sp_city , sp_blood;
     public Button search;
-    AutoCompleteTextView state , city;
+    String cities[] = null;
+    FirebaseAuth firebaseAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //remove app bar
-        //getSupportActionBar().hide();
         setTitle("Search Donor");
         setContentView(R.layout.activity_search_donor);
 
         search = (Button) findViewById(R.id.searchbutton);
-        state = findViewById(R.id.state);
-        city = findViewById(R.id.city);
+        sp_state = findViewById(R.id.state);
+        sp_city = findViewById(R.id.city);
+        sp_blood = findViewById(R.id.blood);
+        firebaseAuth = FirebaseAuth.getInstance();
         search.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -51,36 +47,10 @@ public class searchDonor extends AppCompatActivity implements AdapterView.OnItem
             }
         });
 
-        sp = findViewById(R.id.spinner);
-        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
-                R.array.bloodgrp, android.R.layout.simple_spinner_item);
-// Specify the layout to use when the list of choices appears
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-// Apply the adapter to the spinner
-        sp.setAdapter(adapter);
-
-        sp.setOnItemSelectedListener(this);
-
-        //state suggestions
-        ArrayAdapter <String> adapter1 = new ArrayAdapter<String>(this,R.layout.support_simple_spinner_dropdown_item , STATES);
-        state.setAdapter(adapter1);
-
-        //cities suggestions
-        ArrayAdapter <String> adapter2 = new ArrayAdapter<String>(this,R.layout.support_simple_spinner_dropdown_item , Cities);
-        city.setAdapter(adapter2);
-
+        sp_state.setOnItemSelectedListener(this);
 
     }
 
-    @Override
-    public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-
-    }
-
-    @Override
-    public void onNothingSelected(AdapterView<?> adapterView) {
-
-    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -96,10 +66,49 @@ public class searchDonor extends AppCompatActivity implements AdapterView.OnItem
                 Intent i = new Intent(searchDonor.this,user_info.class);
                 startActivity(i);
 
+            case R.id.logout:
+                firebaseAuth.signOut();
+                Toast.makeText(searchDonor.this, "Logged out successfully", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(searchDonor.this,login.class));
+                finish();
+
         }
         return super.onOptionsItemSelected(item);
     }
 
     public void search(View view) {
+    }
+
+    @Override
+    public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+
+        if(i==0){
+            cities = new String[]{"Enter your city"};
+        }
+        if(i == 1){
+            cities = new String[]{"Enter your city","Delhi" , "New Delhi"};
+        }
+
+        if(i == 2){
+            cities = new String[]{"Enter your city","Ahmedabad" , "Surat" , "Vadodara" , "Rajkot" , "Bhavnagar"};
+        }
+        if(i == 3){
+            cities = new String[]{"Enter your city","Faridabad" , "Gurgaon" , "Rohtak" , "Panipat" , "Karnal"};
+        }
+
+        if(i == 4){
+            cities = new String[]{"Enter your city","Indore" , "Bhopal" , "Gwalior" , "Ratlam" , "Rewa"};
+        }
+        if(i == 5){
+            cities = new String[]{"Enter your city","Jaipur" , "Jodhpur" , "Kota" , "Ajmer" , "Udaipur"};
+        }
+        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1,cities);
+        sp_city.setAdapter(arrayAdapter);
+
+    }
+
+    @Override
+    public void onNothingSelected(AdapterView<?> adapterView) {
+
     }
 }

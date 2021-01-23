@@ -22,7 +22,7 @@
         android:textSize="20sp"
         android:fontFamily="@font/baloo"/>
 
-    <AutoCompleteTextView
+    <Spinner
         android:layout_width="match_parent"
         android:layout_height="35dp"
         android:hint="Enter State"
@@ -33,7 +33,9 @@
         android:layout_marginTop="5dp"
         android:id="@+id/state"
         android:fontFamily="@font/baloo"
-        android:completionThreshold="1"/>
+        android:completionThreshold="1"
+        android:entries="@array/states"
+        android:spinnerMode="dropdown"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -45,7 +47,7 @@
         android:layout_marginTop="20dp"
         android:fontFamily="@font/baloo"/>
 
-    <AutoCompleteTextView
+    <Spinner
         android:layout_width="match_parent"
         android:layout_height="35dp"
         android:hint="Enter City"
@@ -56,7 +58,8 @@
         android:layout_marginTop="5dp"
         android:id="@+id/city"
         android:fontFamily="@font/baloo"
-        android:completionThreshold="1"/>
+        android:completionThreshold="1"
+        android:spinnerMode="dropdown"/>
 
 
     <LinearLayout
@@ -81,9 +84,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:id="@+id/spinner"
+            android:id="@+id/blood"
             android:layout_weight="1"
-            android:layout_marginRight="20dp" />
+            android:layout_marginRight="20dp"
+            android:entries="@array/bloodgrp"
+            />
 
     </LinearLayout>
 
