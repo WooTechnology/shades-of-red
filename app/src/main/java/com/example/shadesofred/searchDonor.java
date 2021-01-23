@@ -62,15 +62,18 @@ public class searchDonor extends AppCompatActivity implements AdapterView.OnItem
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()){
-            case R.id.profile:
+            case R.id.profile:{
                 Intent i = new Intent(searchDonor.this,user_info.class);
                 startActivity(i);
+                break;
+            }
 
-            case R.id.logout:
+            case R.id.logout:{
                 firebaseAuth.signOut();
                 Toast.makeText(searchDonor.this, "Logged out successfully", Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(searchDonor.this,login.class));
                 finish();
+            }
 
         }
         return super.onOptionsItemSelected(item);
