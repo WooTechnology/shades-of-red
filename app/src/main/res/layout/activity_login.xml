@@ -46,7 +46,6 @@
         android:layout_width="233dp"
         android:layout_height="50dp"
         android:background="@drawable/btn_bg"
-        android:fontFamily="@font/baloo"
         android:text="LOGIN"
         android:textColor="#000000"
         android:textSize="25sp"
