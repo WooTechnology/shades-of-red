@@ -45,9 +45,7 @@
                 android:hint="Enter Full Name"
                 android:paddingLeft="20dp"
                 android:paddingTop="10dp"
-                android:paddingBottom="10dp"
-                android:textSize="20sp"
-                android:fontFamily="@font/baloo"/>
+                android:paddingBottom="10dp" />
 
             <EditText
                 android:id="@+id/et_email"
@@ -59,26 +57,8 @@
                 android:paddingLeft="20dp"
                 android:paddingTop="10dp"
                 android:paddingBottom="10dp"
-                android:textSize="20sp"
                 android:layout_marginTop="20dp"
-                android:fontFamily="@font/baloo"
                 android:inputType="textEmailAddress"/>
-
-            <Spinner
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="20dp"
-                android:background="@drawable/et_bg"
-                android:hint="Enter Blood Group"
-                android:paddingLeft="20dp"
-                android:paddingTop="10dp"
-                android:paddingBottom="10dp"
-                android:textSize="20sp"
-                android:fontFamily="@font/baloo"
-                android:layout_marginTop="20dp"
-                android:entries="@array/bloodgrp"
-                android:spinnerMode="dropdown"
-                android:id="@+id/sp_blood"/>
 
             <EditText
                 android:id="@+id/et_num"
@@ -90,38 +70,7 @@
                 android:paddingLeft="20dp"
                 android:paddingTop="10dp"
                 android:paddingBottom="10dp"
-                android:textSize="20sp"
-                android:fontFamily="@font/baloo"
                 android:layout_marginTop="20dp"/>
-
-            <Spinner
-                android:id="@+id/sp_state"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="20dp"
-                android:background="@drawable/et_bg"
-                android:paddingLeft="20dp"
-                android:paddingTop="10dp"
-                android:paddingBottom="10dp"
-                android:textSize="20sp"
-                android:fontFamily="@font/baloo"
-                android:layout_marginTop="20dp"
-                android:entries="@array/states"
-                android:spinnerMode="dropdown"/>
-
-            <Spinner
-                android:id="@+id/sp_city"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="20dp"
-                android:background="@drawable/et_bg"
-                android:paddingLeft="20dp"
-                android:paddingTop="10dp"
-                android:paddingBottom="10dp"
-                android:textSize="20sp"
-                android:fontFamily="@font/baloo"
-                android:layout_marginTop="20dp"
-                android:spinnerMode="dropdown"/>
 
             <EditText
                 android:id="@+id/et_pwd"
@@ -134,9 +83,7 @@
                 android:paddingTop="10dp"
                 android:inputType="textPassword"
                 android:paddingBottom="10dp"
-                android:textSize="20sp"
-                android:layout_marginTop="20dp"
-                android:fontFamily="@font/baloo" />
+                android:layout_marginTop="20dp" />
 
             <EditText
                 android:layout_width="match_parent"
@@ -146,12 +93,49 @@
                 android:hint="Confirm Password"
                 android:inputType="textPassword"
                 android:paddingLeft="20dp"
-                android:fontFamily="@font/baloo"
                 android:paddingTop="10dp"
                 android:paddingBottom="10dp"
-                android:textSize="20sp"
                 android:layout_marginTop="20dp"
                 android:id="@+id/et_cfmpwd"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:hint="Enter Blood Group"
+                android:paddingLeft="10dp"
+                android:theme="@style/spinnerTheme"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:fontFamily="@font/baloo"
+                android:layout_marginTop="20dp"
+                android:entries="@array/bloodgrp"
+                android:spinnerMode="dropdown"
+                android:id="@+id/sp_blood"/>
+
+            <Spinner
+                android:id="@+id/sp_state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:theme="@style/spinnerTheme"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:fontFamily="@font/baloo"
+                android:layout_marginTop="20dp"
+                android:entries="@array/states"
+                android:spinnerMode="dropdown"/>
+
+            <Spinner
+                android:id="@+id/sp_city"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginHorizontal="20dp"
+                android:fontFamily="@font/baloo"
+                android:theme="@style/spinnerTheme"
+                android:layout_marginTop="20dp"
+                android:spinnerMode="dropdown"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -164,9 +148,10 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:layout_marginTop="20dp"
                     android:text="You are?"
                     android:textColor="#000000"
-                    android:textSize="20sp"/>
+                    android:textSize="18sp"/>
 
                 <RadioGroup
                     android:layout_width="0dp"
@@ -177,18 +162,17 @@
                     <RadioButton
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
                         android:layout_weight="1"
                         android:text="Patient"
-                        android:textSize="20sp"
-                        android:id="@+id/rb_p"
-                        />
+                        android:id="@+id/rb_p"/>
 
                     <RadioButton
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
                         android:layout_weight="1"
                         android:text="Donor"
-                        android:textSize="20sp"
                         android:id="@+id/rb_d"/>
 
                 </RadioGroup>
@@ -204,7 +188,6 @@
                 android:layout_marginTop="20dp"
                 android:background="@drawable/btn_bg"
                 android:text="register"
-                android:fontFamily="@font/baloo"
                 android:textSize="25sp" />
 
 
@@ -215,8 +198,6 @@
                 android:gravity="center_horizontal"
                 android:text="Already have an account? Click here."
                 android:textAlignment="center"
-                android:textSize="20dp"
-                android:fontFamily="@font/baloo"
                 android:layout_marginTop="10dp"
                 android:layout_gravity="center"/>
 
@@ -226,8 +207,7 @@
                 android:layout_gravity="center"
                 android:visibility="invisible"
                 android:id="@+id/pb"
-                android:layout_marginVertical="10dp"
-                />
+                android:layout_marginVertical="10dp" />
 
 
         </LinearLayout>
