@@ -7,23 +7,31 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 public class user_info extends AppCompatActivity {
-    public Button edit;
+    FloatingActionButton floatingActionButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setTitle("Profile");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         setContentView(R.layout.activity_user_info);
-        getSupportActionBar().hide();
+        floatingActionButton = findViewById(R.id.btn_edit);
 
-    edit = (Button) findViewById(R.id.btn_edit);
+        floatingActionButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(user_info.this , userInfoEdit.class));
+            }
+        });
 
-        edit.setOnClickListener(new View.OnClickListener() {
-        @Override
-        public void onClick(View view) {
-            Intent intent = new Intent(user_info.this, userInfoEdit.class);
-            startActivity(intent);
-        }
-    });
 }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        finish();
+        return true;
+    }
 }

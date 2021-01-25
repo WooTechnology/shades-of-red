@@ -20,7 +20,7 @@
         android:layout_marginLeft="20dp"
         android:textColor="#000000"
         android:textSize="20sp"
-        android:fontFamily="@font/baloo"/>
+        android:textStyle="bold"/>
 
     <Spinner
         android:layout_width="match_parent"
@@ -32,7 +32,6 @@
         android:textSize="15dp"
         android:layout_marginTop="5dp"
         android:id="@+id/state"
-        android:fontFamily="@font/baloo"
         android:completionThreshold="1"
         android:entries="@array/states"
         android:spinnerMode="dropdown"/>
@@ -45,7 +44,7 @@
         android:textColor="#000000"
         android:textSize="20sp"
         android:layout_marginTop="20dp"
-        android:fontFamily="@font/baloo"/>
+        android:textStyle="bold"/>
 
     <Spinner
         android:layout_width="match_parent"
@@ -57,7 +56,6 @@
         android:textSize="15dp"
         android:layout_marginTop="5dp"
         android:id="@+id/city"
-        android:fontFamily="@font/baloo"
         android:completionThreshold="1"
         android:spinnerMode="dropdown"/>
 
@@ -78,7 +76,7 @@
             android:layout_marginTop="20dp"
             android:id="@+id/bloodgrp"
             android:layout_weight="1"
-            android:fontFamily="@font/baloo"/>
+            android:textStyle="bold"/>
 
         <Spinner
             android:layout_width="wrap_content"
@@ -99,7 +97,7 @@
             android:layout_marginHorizontal="20dp"
             android:layout_marginTop="40dp"
             android:background="@drawable/btn_bg"
-            android:fontFamily="@font/baloo"
+            android:textStyle="bold"
             android:onClick="search"
             android:text="SEARCH"
             android:textSize="20sp" />

@@ -6,5 +6,9 @@
         <item name="colorPrimaryDark">#D75A4A</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+    <style name="spinnerTheme">
+        <item name="android:textSize">18sp</item>
+        <item name="background">@drawable/spinnerbg</item>
 
+    </style>
 </resources>
