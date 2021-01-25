@@ -2,7 +2,7 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
+    android:layout_width="418dp"
     android:layout_height="120dp">
 
     <androidx.cardview.widget.CardView
@@ -21,12 +21,12 @@
             android:orientation="horizontal">
 
             <LinearLayout
-                android:layout_width="300dp"
+                android:layout_width="170dp"
                 android:layout_height="80dp"
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/textView3"
+                    android:id="@+id/Name"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="3sp"
@@ -37,7 +37,7 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/textView4"
+                    android:id="@+id/Number"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="3sp"
@@ -52,11 +52,10 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/textView5"
+                    android:id="@+id/Bloodgroup"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-medium"
-                    android:text="@string/bloodagrp"
                     android:textAlignment="center"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                     android:textColor="@android:color/holo_red_dark"
@@ -69,16 +68,17 @@
                     android:orientation="horizontal">
 
                     <ImageButton
-                        android:id="@+id/imageButton3"
+                        android:id="@+id/Call"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:backgroundTint="#FFFFFF"
+                        android:onClick="callDonor1"
                         android:tint="#4CAF50"
                         app:srcCompat="@android:drawable/sym_action_call" />
 
                     <ImageButton
-                        android:id="@+id/imageButton5"
+                        android:id="@+id/Message"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"

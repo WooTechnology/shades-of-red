@@ -41,7 +41,7 @@ public class searchDonor extends AppCompatActivity implements AdapterView.OnItem
         search.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(searchDonor.this, donarCard.class);
+                Intent intent = new Intent(searchDonor.this, donorList.class);
                 startActivity(intent);
                 finish();
             }

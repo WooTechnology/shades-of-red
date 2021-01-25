@@ -12,11 +12,11 @@ public class donarCard extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.rough_donorlist);
+        setContentView(R.layout.activity_donar_card);
         getSupportActionBar().hide();
     }
-    public void callDonor(View view){
-        Uri number = Uri.parse("9967940321");
+    public void callDonor(View view, String num){
+        Uri number = Uri.parse(num);
         Intent callIntent = new Intent(Intent.ACTION_DIAL, number);
         startActivity(callIntent);
     }
