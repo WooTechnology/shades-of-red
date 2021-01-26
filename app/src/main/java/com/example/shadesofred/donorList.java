@@ -29,6 +29,7 @@ public class donorList extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.donor_list);
+
         String blood = getIntent().getExtras().get("blood").toString();
         recview = (RecyclerView)findViewById(R.id.recview);
         recview.setLayoutManager(new LinearLayoutManager(this));
@@ -85,6 +86,13 @@ public class donorList extends AppCompatActivity {
     public  void  onStop(){
         super.onStop();
         adapter1.stopListening();
+    }
+
+    @Override
+    public  void onBackPressed(){
+        Intent intent = new Intent(donorList.this, searchDonor.class);
+        this.finish();
+        startActivity(intent);
     }
     class myViewHolder extends RecyclerView.ViewHolder{
         TextView name;
