@@ -51,17 +51,6 @@
                 android:layout_height="80dp"
                 android:orientation="vertical">
 
-                <TextView
-                    android:id="@+id/Bloodgroup"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-medium"
-                    android:textAlignment="center"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                    android:textColor="@android:color/holo_red_dark"
-                    android:textSize="28sp"
-                    android:textStyle="bold" />
-
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -73,7 +62,6 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:backgroundTint="#FFFFFF"
-                        android:onClick="callDonor1"
                         android:tint="#4CAF50"
                         app:srcCompat="@android:drawable/sym_action_call" />
 
