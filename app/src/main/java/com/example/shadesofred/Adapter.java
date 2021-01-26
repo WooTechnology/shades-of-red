@@ -38,6 +38,7 @@ public class Adapter extends FirebaseRecyclerAdapter<users, Adapter.myViewHolder
         holder.name.setText(user.getName());
         holder.Number.setText(user.getNumber());
         holder.blood.setText(user.getBlood());
+
     }
     public  void makePhoneCall(Activity activity){
         Uri number = Uri.parse("9967940321");
@@ -62,7 +63,6 @@ public class Adapter extends FirebaseRecyclerAdapter<users, Adapter.myViewHolder
             super(itemView);
             name = (TextView)itemView.findViewById(R.id.Name);
             Number = (TextView)itemView.findViewById(R.id.Number);
-            blood = (TextView)itemView.findViewById(R.id.Bloodgroup);
             call = (ImageButton)itemView.findViewById(R.id.Call);
             message = (ImageButton)itemView.findViewById(R.id.Message);
         }

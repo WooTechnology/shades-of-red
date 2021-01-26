@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Priyal Bhatewara"
+            android:textSize="25sp"
+            android:textColor="@color/black"
+            android:id="@+id/txt_name"
+            android:textAllCaps="true"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Donor"
+            android:textSize="20sp"
+            android:textColor="#D75A4A"
+            android:id="@+id/txt_status"
+            android:layout_below="@+id/txt_name"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="40dp"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/txt_status"
+            android:id="@+id/linearlayout">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginBottom="10dp">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@mipmap/blood"
+                    android:id="@+id/img_bood"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/img_bood"
+                    android:text="Blood Group"
+                    android:layout_marginLeft="30dp"
+                    android:textColor="#4d4d4d"
+                    android:textSize="15sp"
+                    android:id="@+id/txt_blood"/>
+
+                <TextView
+                    android:id="@+id/bloodGroups"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_blood"
+                    android:layout_toRightOf="@+id/img_bood"
+                    android:layout_marginLeft="30dp"
+                    android:text="A+"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#c0c0c0"
+                android:layout_marginVertical="10dp"
+                android:layout_marginLeft="50dp"/>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginVertical="10dp">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_baseline_email_24"
+                    android:id="@+id/img_email"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/img_email"
+                    android:text="Email"
+                    android:layout_marginLeft="30dp"
+                    android:textColor="#4d4d4d"
+                    android:textSize="15sp"
+                    android:id="@+id/txt_email"/>
+
+                <TextView
+                    android:id="@+id/emailId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_email"
+                    android:layout_toRightOf="@+id/img_email"
+                    android:layout_marginLeft="30dp"
+                    android:text="priyalbhatewara2000@gmail.com"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#c0c0c0"
+                android:layout_marginVertical="10dp"
+                android:layout_marginLeft="50dp"/>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginVertical="10dp">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_baseline_phone_24"
+                    android:id="@+id/img_phone"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/img_phone"
+                    android:text="Phone"
+                    android:layout_marginLeft="30dp"
+                    android:textColor="#4d4d4d"
+                    android:textSize="15sp"
+                    android:id="@+id/txt_phone"/>
+
+                <TextView
+                    android:id="@+id/phone_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_phone"
+                    android:layout_toRightOf="@+id/img_phone"
+                    android:layout_marginLeft="30dp"
+                    android:text="+918976543210"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#c0c0c0"
+                android:layout_marginVertical="10dp"
+                android:layout_marginLeft="50dp"/>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:layout_marginVertical="10dp">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_baseline_location_on_24"
+                    android:id="@+id/img_location"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/img_location"
+                    android:text="City"
+                    android:layout_marginLeft="30dp"
+                    android:textColor="#4d4d4d"
+                    android:textSize="15sp"
+                    android:id="@+id/txt_city"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_city"
+                    android:layout_toRightOf="@+id/img_location"
+                    android:layout_marginLeft="30dp"
+                    android:text="Ratlam"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"
+                    android:id="@+id/enter_city"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/img_location"
+                    android:text="State"
+                    android:layout_marginLeft="30dp"
+                    android:textColor="#4d4d4d"
+                    android:textSize="15sp"
+                    android:layout_below="@+id/enter_city"
+                    android:id="@+id/txt_state"
+                    android:layout_marginTop="7dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_state"
+                    android:layout_toRightOf="@+id/img_location"
+                    android:layout_marginLeft="30dp"
+                    android:text="Madhya Pradesh"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"
+                    android:id="@+id/enter_state"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <!--        <Button-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_below="@+id/linearlayout"-->
+        <!--            android:layout_centerHorizontal="true"-->
+        <!--            android:layout_marginTop="20dp"-->
+        <!--            android:text="Edit"/>-->
+
+
+
+    </RelativeLayout>
+
+
+
+</ScrollView>

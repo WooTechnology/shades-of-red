@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.shadesofred">
-
+    <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -16,7 +16,9 @@
         <activity android:name=".user_info" />
         <activity android:name=".searchDonor" >
         </activity>
-        <activity android:name=".donorList" />
+        <activity android:name=".donorList"  android:exported="true">
+
+        </activity>
         <activity android:name=".splash_screen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -27,7 +29,7 @@
         <activity android:name=".MainActivity" />
         <activity android:name=".signup" />
         <activity android:name=".login" />
-
+        <activity android:name=".profile_page" />
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
