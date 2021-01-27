@@ -33,7 +33,8 @@ public class profile_page extends AppCompatActivity {
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setTitle("Search Donor");
+        setTitle("User Profile");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         setContentView(R.layout.activity_profile);
         userId = getIntent().getExtras().get("visitUserId").toString();
 
@@ -91,5 +92,10 @@ public class profile_page extends AppCompatActivity {
 
             }
         });
+    }
+    @Override
+    public boolean onSupportNavigateUp() {
+        finish();
+        return true;
     }
 }

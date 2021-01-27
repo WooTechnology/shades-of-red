@@ -30,7 +30,7 @@
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:text=" "
-            android:textSize="15sp"
+            android:textSize="20sp"
             android:textColor="#D75A4A"
             android:id="@+id/txt_status"
             android:layout_below="@+id/txt_name"
