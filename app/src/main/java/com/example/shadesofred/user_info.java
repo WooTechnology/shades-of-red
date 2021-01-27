@@ -3,8 +3,10 @@ package com.example.shadesofred;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -25,6 +27,7 @@ public class user_info extends AppCompatActivity {
     FirebaseDatabase firebaseDatabase;
     DatabaseReference databaseReference;
     FirebaseAuth firebaseAuth;
+    ProgressDialog progressDialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,6 +51,12 @@ public class user_info extends AppCompatActivity {
         FirebaseUser user = firebaseAuth.getCurrentUser();
         final String email = user.getEmail();
 
+        final ProgressDialog progressDialog = new ProgressDialog(user_info.this);
+        progressDialog.show();
+        //set content view
+        progressDialog.setContentView(R.layout.progress_dialog);
+        //set transparent background
+        progressDialog.getWindow().setBackgroundDrawableResource(R.color.trans);
 
         databaseReference.addValueEventListener(new ValueEventListener() {
             @Override
@@ -56,7 +65,7 @@ public class user_info extends AppCompatActivity {
                     if(ds.child("email").getValue().equals(email)){
                         tv_name.setText(ds.child("name").getValue(String.class));
                         tv_status.setText(ds.child("rbstate").getValue(String.class));
-                        tv_blood.setText(ds.child("Blood").getValue(String.class));
+                        tv_blood.setText(ds.child("blood").getValue(String.class));
                         tv_number.setText(ds.child("number").getValue(String.class));
                         tv_city.setText(ds.child("city").getValue(String.class));
                         tv_state.setText(ds.child("state").getValue(String.class));
@@ -66,11 +75,20 @@ public class user_info extends AppCompatActivity {
                 }
             }
 
+
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
 
             }
         });
+
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                progressDialog.dismiss();
+            }
+        },3000);
+
 
         floatingActionButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -86,4 +104,6 @@ public class user_info extends AppCompatActivity {
         finish();
         return true;
     }
+
+
 }

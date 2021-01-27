@@ -6,4 +6,5 @@
     <color name="startblue">#fd3a69</color>
     <color name="endblue">#ffdada</color>
     <color name="black">#000000</color>
+    <color name="trans">#00000000</color>
 </resources>

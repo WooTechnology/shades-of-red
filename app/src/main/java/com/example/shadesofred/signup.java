@@ -165,11 +165,11 @@ public class signup extends AppCompatActivity implements AdapterView.OnItemSelec
         }
 
         if(rb_patient.isChecked()){
-            rbState = "patient";
+            rbState = "Patient";
         }
 
         if(rb_donor.isChecked()){
-            rbState = "donor";
+            rbState = "Donor";
         }
 
         progressBar.setVisibility(View.VISIBLE);
