@@ -31,11 +31,14 @@ public class donorList extends AppCompatActivity {
         setContentView(R.layout.donor_list);
 
         String blood = getIntent().getExtras().get("blood").toString();
+        String state = getIntent().getExtras().get("state").toString();
+        String city =  getIntent().getExtras().get("city").toString();
+        String filter = city + state + blood + "Donor";
         recview = (RecyclerView)findViewById(R.id.recview);
         recview.setLayoutManager(new LinearLayoutManager(this));
         FirebaseRecyclerOptions<users> options =
                 new FirebaseRecyclerOptions.Builder<users>()
-                        .setQuery(FirebaseDatabase.getInstance().getReference().child("Users").orderByChild("Blood").equalTo(blood), users.class)
+                        .setQuery(FirebaseDatabase.getInstance().getReference().child("Users").orderByChild("filter").equalTo(filter) , users.class)
                         .build();
 
              adapter1 = new FirebaseRecyclerAdapter<users, myViewHolder>(options) {

@@ -44,8 +44,8 @@ public class searchDonor extends AppCompatActivity implements AdapterView.OnItem
             public void onClick(View view) {
                 Intent intent = new Intent(searchDonor.this, donorList.class);
                 intent.putExtra("blood", sp_blood.getSelectedItem().toString());
-                intent.putExtra("state", sp_state.toString());
-                intent.putExtra("bl", sp_blood.toString());
+                intent.putExtra("state", sp_state.getSelectedItem().toString());
+                intent.putExtra("city", sp_city.getSelectedItem().toString());
                 System.out.println(sp_city.toString());
                 startActivity(intent);
                 finish();

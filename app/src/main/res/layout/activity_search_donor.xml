@@ -12,12 +12,36 @@
         android:orientation="vertical"
         android:layout_centerInParent="true">
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Blood Group"
+            android:layout_marginLeft="20dp"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/bloodgrp"
+            android:layout_weight="1"
+            android:textStyle="bold"/>
 
+        <Spinner
+            android:layout_marginHorizontal="20dp"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/blood"
+            android:layout_weight="1"
+            android:layout_marginRight="20dp"
+            android:entries="@array/bloodgrp"
+            />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="State"
         android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
         android:textColor="#000000"
         android:textSize="20sp"
         android:textStyle="bold"/>
@@ -60,35 +84,7 @@
         android:spinnerMode="dropdown"/>
 
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginBottom="10dp">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Blood Group"
-            android:layout_marginLeft="20dp"
-            android:textColor="#000000"
-            android:textSize="20sp"
-            android:layout_marginTop="20dp"
-            android:id="@+id/bloodgrp"
-            android:layout_weight="1"
-            android:textStyle="bold"/>
-
-        <Spinner
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:id="@+id/blood"
-            android:layout_weight="1"
-            android:layout_marginRight="20dp"
-            android:entries="@array/bloodgrp"
-            />
-
-    </LinearLayout>
 
         <Button
             android:id="@+id/searchbutton"
