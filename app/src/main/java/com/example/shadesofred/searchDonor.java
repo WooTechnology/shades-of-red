@@ -74,12 +74,18 @@ public class searchDonor extends AppCompatActivity implements AdapterView.OnItem
                 break;
             }
 
+            case R.id.faq:{
+                startActivity(new Intent(searchDonor.this , faq.class));
+                break;
+            }
+
             case R.id.logout:{
                 firebaseAuth.signOut();
                 Toast.makeText(searchDonor.this, "Logged out successfully", Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(searchDonor.this,login.class));
                 finish();
             }
+
 
         }
         return super.onOptionsItemSelected(item);

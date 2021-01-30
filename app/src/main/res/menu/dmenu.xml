@@ -4,7 +4,11 @@
     <item android:id="@+id/profile"
         android:title="My Profile"/>
 
+    <item android:id="@+id/faq"
+        android:title="FAQ"/>
+
     <item android:id="@+id/logout"
         android:title="Logout"/>
+
 
 </menu>

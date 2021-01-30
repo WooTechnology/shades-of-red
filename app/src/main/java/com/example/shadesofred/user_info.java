@@ -58,6 +58,7 @@ public class user_info extends AppCompatActivity {
         //set transparent background
         progressDialog.getWindow().setBackgroundDrawableResource(R.color.trans);
 
+
         databaseReference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
