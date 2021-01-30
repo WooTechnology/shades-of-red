@@ -1,7 +1,7 @@
 package com.example.shadesofred;
 
 public class users {
-    public String name , email , number , blood , state , city , rbstate ;
+    public String name , email , number , blood , state , city , rbstate, filter ;
 
     public users(){
 
@@ -9,7 +9,7 @@ public class users {
 
 
 
-    public users(String name, String email, String number, String blood, String state, String city , String rbstate) {
+    public users(String name, String email, String number, String blood, String state, String city , String rbstate, String filter) {
         this.name = name;
         this.email = email;
         this.number = number;
@@ -17,6 +17,7 @@ public class users {
         this.state = state;
         this.city = city;
         this.rbstate = rbstate;
+        this.filter = filter;
     }
 
     public String getName() {

@@ -171,14 +171,14 @@ public class signup extends AppCompatActivity implements AdapterView.OnItemSelec
         if(rb_donor.isChecked()){
             rbState = "Donor";
         }
-
         progressBar.setVisibility(View.VISIBLE);
+        final String filter = city + state + bloodgrp + rbState;
         firebaseAuth.createUserWithEmailAndPassword(email, password)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
-                            users info = new users(name , email , phoneNumber,bloodgrp,state,city,rbState);
+                            users info = new users(name , email , phoneNumber,bloodgrp,state,city,rbState,filter);
                             FirebaseDatabase.getInstance().getReference("Users").child(FirebaseAuth.getInstance().getCurrentUser().getUid())
                                     .setValue(info).addOnCompleteListener(new OnCompleteListener<Void>() {
                                 @Override
