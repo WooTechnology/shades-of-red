@@ -1,7 +1,9 @@
 package com.example.shadesofred;
 
+import android.Manifest;
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
@@ -10,9 +12,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -58,16 +62,37 @@ public class donorList extends AppCompatActivity {
                 holder.call.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                       try {
-                           Intent intent = new Intent(Intent.ACTION_CALL);
-                           intent.setData(Uri.parse("tel:" + user.getNumber()));
-                           startActivity(intent);
-                       }catch (ActivityNotFoundException exception){
-                           Log.e("Calling a number", "callFailed", exception);
-                       }
+                        Intent intent = new Intent(Intent.ACTION_DIAL);
+                        intent.setData(Uri.parse("tel:" + user.getNumber()));
+                        if(ActivityCompat.checkSelfPermission(getApplicationContext(), Manifest.permission.CALL_PHONE)!= PackageManager.PERMISSION_GRANTED) {
+                            Toast.makeText(getApplicationContext(), "Please Grant Permission To Proceed", Toast.LENGTH_SHORT).show();
+                            requestPermission();
+                            startActivity(intent);
+                        }else
+                            startActivity(intent);
+                    }
+                });
+                holder.message.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(Intent.ACTION_MAIN);
+                        intent.addCategory(Intent.CATEGORY_DEFAULT);
+                        intent.setType("vnd.android-dir/mms-sms");
+                        startActivity(intent);
                     }
                 });
             }
+                 private void requestPermission()
+                 {
+                     ActivityCompat.requestPermissions(donorList.this, new String[] {Manifest.permission.CALL_PHONE},1);
+
+                 }
+                 private void messageRequestPermission()
+                 {
+                     ActivityCompat.requestPermissions(donorList.this, new String[] {Manifest.permission.SEND_SMS},1);
+
+                 }
+
 
             @Override
             public myViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
