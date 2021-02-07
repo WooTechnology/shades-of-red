@@ -28,3 +28,27 @@ During covid-19, we all have seen people sharing stories on social media platfor
 4. FAQ Pages <br> <img src="https://user-images.githubusercontent.com/47551578/107139063-57fcb480-693e-11eb-8ea8-64fe8cf1187a.jpg" width=140>.        <img src="https://user-images.githubusercontent.com/47551578/107139065-5b903b80-693e-11eb-9545-228259b2bb4e.jpeg" width=140>
 5. Edit Profile & Profile Screens <br> <img src="https://user-images.githubusercontent.com/47551578/107139057-54692d80-693e-11eb-91bb-5a8907e6b97c.jpg" width=140>.        <img src="https://user-images.githubusercontent.com/47551578/107139054-50d5a680-693e-11eb-8ec4-98e58a5d5a30.jpg" width=140>
 
+## Install Pre-requisites
+
+1. Download the Android IDE: Android Studio (you may need to install java by following the prompts)
+  a. Optional: Install the Android SDK: ``` brew install android-sdk ``` , Select the SDK that ```brew``` logged out back in the previous command
+2. Open this project with in Android Studio IDE
+3. The IDE will complain about *"Gradle sync failed".* Just follow what it says.
+4. Once the IDE stops giving suggestions go to **Tools -> Android -> SDK Manager** and do what the SDK Manager says.
+5. Once the SDK Manager stops giving suggestions, use it to install the Google Repository and the Android Support Repository.
+
+## How do you use this repository?
+Clone or download this repo<br>
+```
+https://github.com/WooTechnology/shades-of-red
+```
+After that you can simply take the files and paste it in the required folders. Et Voila !
+
+## Setup Virtual Device
+### Running on a virtual device
+1. Open the AVD Manager (***Tools -> Android -> AVD Manager***).
+2. Create a new Virtual Device. The size/model doesn't matter that much
+3. Select a system image that has both a _x86_64 ABI and Google Play Services_.
+4. Finish and LOGIN!
+
+
