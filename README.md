@@ -15,6 +15,7 @@ During covid-19, we all have seen people sharing stories on social media platfor
    - [Akriti](https://github.com/Akshima-Ghai)
    - [Akanksha](https://github.com/Akanksha-Pant)
    - [Madhuvanthi](https://github.com/madhuvanthi27)
+   - [Akshima](https://github.com/Akshima-Ghai)
    
 ## Technology Stack
 1. Backend: Firebase
